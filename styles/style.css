@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="reset"]::-moz-focus-inner, 
+input[type="button"]::-moz-focus-inner, 
+input[type="submit"]::-moz-focus-inner, 
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+	padding: 0;
+	border: 0;	
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;	
+}
+
+img {
+	width: 240px;
+	height: 78px;
+}
+
+.login-wrapper {
+	display: grid;
+	grid-template-rows: 90px 2fr 0.5fr;
+}
+
+/*HEADER LOGIN FORM STYLES*/
+
+.login-form {
+	background-color: #4169a7;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+}
+
+.login-form div {
+	display: grid;
+	grid-template-columns: 1.3fr 1fr;
+	width: 1000px;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	
+	color: #fff;
+	font-size: 1.3rem;
+}
+
+.login-form div img {
+	margin-left: -35px;
+	margin-top: 18px;
+}
+
+.login-form div .login ul {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr) 1.5fr;
+	grid-template-rows: 1fr 0.3fr;
+	grid-gap: 5px 15px;
+	align-items: center;
+	margin-top: 15px;
+	margin-left: 37px;
+}
+
+.login-form div .login input {
+	margin-top: 3px;
+	font-size: 1.25rem;
+	width: 140px;
+	height: 1.6em;
+	border: 0;
+}
+
+.login-form li a:first-of-type {
+	background-color: #4772b5;
+	color: #fff;
+	padding: 2px 8px;
+	font-weight: bold;
+	border: .5px solid #3a5d94;
+	outline: 0;
+}
+
+.login-form li:nth-of-type(3) {
+	align-self: end;
+	margin-bottom: 1px;
+}
+
+.login-wrapper div .forgot-link {
+	color: #abccff;
+	grid-column: 2 / 3;
+	align-self: center;
+}
+
+
+/*SIGNUP FORM STYLES*/
+
+.signup-form {
+	display: grid;
+	grid-template-columns: 1.3fr 1fr;
+	height: 100vh;
+	background-color: #f0f6ff;
+}
+
+	/*CONNECT WITH FRIENDS STYLES*/
+
+.connect-with-friends {
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+	margin-left: 175px;
+	margin-right: 50px;
+}
+
+.connect-with-friends div h2 {
+	font-family: Ubuntu;
+	font-size: 2.9rem;
+	margin-bottom: 50px;
+	color: #404040;
+}
+
+.friends-wrapper {
+	font-size: 1.55rem;
+}
+
+.friends-wrapper i {
+	font-size: 5rem;
+	color: #b5b5b5;
+	margin-right: 15px;
+}
+
+.friends-wrapper .see i {
+	margin-right: 40px;
+}
+
+.friends-wrapper .share i {
+	margin-right: 25px;
+}
+
+.friends-wrapper .find i {
+	margin-right: 30px;
+}
+
+
+.friends-wrapper p {
+	color: #6e6e6e;
+}
+
+.friends-wrapper span {
+	color: #404040;
+	font-weight: 700;
+	font-size: 1.6rem;
+}
+
+.friends-inner div {
+	display: flex;
+	align-items: center;
+	margin-bottom: 35px;
+}
+
+	/*CREATE ACCOUNT STYLES*/
+
+.create-account {
+	margin-top: 20px;
+}
+
+.create-account h2 {
+	font-size: 3.7rem;
+	margin-bottom: 4px;
+}
+
+.create-account .p1 {
+	font-size: 1.8rem;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.create-account ul {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 10px;
+	width: 390px;
+	margin-bottom: 20px;
+}
+
+.create-account li:nth-of-type(3),
+.create-account li:nth-of-type(4) {
+	grid-column: 1 / -1;
+}
+
+.create-account input {
+	font-family: Arial;
+	width: 100%;
+	padding: 7px;
+	font-size: 1.7rem;
+	outline: 0;
+	border: 0;
+	border: 1px solid #cfcfcf;
+	border-radius: 5px;
+}
+
+.date-of-birth h4,
+.user-gender h4 {
+	font-size: 1.8rem;
+	margin-bottom: 8px;
+	color: #6e6e6e;
+}
+
+.date-of-birth select {
+	border: .5px solid #cfcfcf;
+	background-color: #fff;
+	font-size: 1.3rem;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+
+.user-gender {
+	margin-bottom: 15px;
+}
+
+.user-gender .genders {
+	display: flex;
+	margin-right: 330px;
+}
+
+.user-gender .genders input {
+	margin-right: 5px;
+}
+
+.user-gender .genders label {
+	font-size: 1.8rem;
+	margin-right: 18px;
+}
+
+.agree-to-terms {
+	width: 55%;
+	font-size: 1.15rem;
+	color: #737373;
+	line-height: 1.3;
+	margin-bottom: 15px;
+}
+
+.agree-to-terms span,
+.create-a-page span  {
+	color: #4169a7;
+}
+
+
+.create-account button {
+	padding: 8px 70px;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 2px 1px 1px #575757;
+	background-color: #5cb85c;
+	border-color: #9c9c9c;
+	border: 0;
+	border-radius: 8px;
+}
+
+.create-account hr {
+	margin: 20px 0;
+	border: 0.5px solid #ebebeb;
+	width: 390px;
+}
+
+.create-a-page p {
+	font-size: 1.38rem;
+	font-weight: bold;
+	color: #6e6e6e;
+}
+
+/*FOOTER SECTION*/
+
+.footer-section {
+	font-family: Arial;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;	
+	font-size: 1.3rem;	
+}
+
+.footer-section a {
+	color: #4169a7;
+}
+
+.footer-section div {
+	width: 1050px;
+}
+
+.footer-section hr {
+	margin: 5px 0;
+	border: 0.3px solid #ebebeb;
+}
+
+.footer-section span,
+.footer-section span > a {
+	color: #737373;
+}
+
+.footer-section .languages,
+.footer-section .footer-links {
+	margin-left: 10px;
+}
+
+.footer-section .languages ul {
+	display: flex;
+	align-items: center;
+}
+
+.footer-section .languages ul li,
+.footer-section .footer-links ul li {
+	margin-right: 13px;
+}
+
+.footer-section .footer-links {
+	margin-bottom: 20px;
+}
+
+.footer-section .footer-links ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-section .footer-links ul li {
+	margin-bottom: 3px;
+}
+
+.copyright {
+	margin-left: 6px;
+}
+
+.copyright p {
+	font-size: 1.15rem;
+	margin-bottom: 25px;
+}
