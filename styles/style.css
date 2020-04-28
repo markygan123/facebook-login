@@ -281,6 +281,11 @@ img {
 	color: #4169a7;
 }
 
+.agree-to-terms span:hover,
+.create-a-page span:hover {
+	text-decoration: underline;
+}
+
 
 .create-account button {
 	padding: 8px 70px;
@@ -334,6 +339,15 @@ img {
 .footer-section span,
 .footer-section span > a {
 	color: #737373;
+}
+
+.footer-section a:hover {
+	text-decoration: underline;
+}
+
+.footer-section span:hover,
+.footer-section span > a:hover {
+	text-decoration: none;
 }
 
 .footer-section .languages,
