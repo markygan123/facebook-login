@@ -113,10 +113,16 @@ img {
 /*SIGNUP FORM STYLES*/
 
 .signup-form {
+	display: flex;
+	justify-content: center;
+	background-color: #f0f6ff;
+}
+
+.signup-wrapper {
 	display: grid;
 	grid-template-columns: 1.3fr 1fr;
 	height: 100vh;
-	background-color: #f0f6ff;
+	width: 1020px;
 }
 
 .connect-with-friends,
@@ -130,7 +136,7 @@ img {
 	display: flex;
 	justify-content: center;	
 	margin-top: 80px;
-	margin-left: 175px;
+	/*margin-left: 175px;*/
 	margin-right: 50px;
 }
 
@@ -202,7 +208,7 @@ img {
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	grid-gap: 10px;
-	width: 390px;
+	width: 400px;
 	margin-bottom: 20px;
 }
 
