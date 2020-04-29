@@ -115,6 +115,10 @@ img {
 	align-self: center;
 }
 
+.login-wrapper div .forgot-link:hover {
+	text-decoration: underline;
+}
+
 
 /*SIGNUP FORM STYLES*/
 
