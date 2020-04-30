@@ -104,6 +104,10 @@ img {
 	outline: 0;
 }
 
+.login-form li a:first-of-type:hover {
+	background-color: #4169a7;
+}
+
 .login-form li:nth-of-type(3) {
 	align-self: end;
 	margin-bottom: 1px;
