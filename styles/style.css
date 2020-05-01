@@ -309,6 +309,11 @@ img {
 	border-radius: 8px;
 }
 
+.create-account button:hover {
+	filter: opacity(90%);
+	cursor: pointer;
+}
+
 .create-account hr {
 	margin: 20px 0;
 	border: 0.5px solid #ebebeb;
